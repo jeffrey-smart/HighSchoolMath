@@ -11,15 +11,16 @@ High school mathematics topics based on the California Department of Education c
 </br>
 </br>
 
-<hr style="height: 4px; border-width: 0; color: black; background-color: black; padding: 0.5px; width: 60%; margin: auto;">
+<hr
+    style="height: 4px; border-width: 0; color: black; background-color: black; padding: 0.5px; width: 60%; margin: auto;">
 
 </br>
 
 <div style="margin: auto;">
-{% for s in site.subjects %}
-<div style="width: 28%; float:left; padding-right: 5%; text-align: center;">
-    <h1 style="text-align: center;"><a href="{{ s.url }}">{{ s.title }}</a></h1>
-    <p>{{s.description}}</p>
-</div>
-{% endfor %}
+    {% for s in site.subjects %}
+    <div style="width: 28%; float:left; padding-right: 5%; text-align: right;">
+        <h1 style="text-align: center;"><a href="{{ s.url }}">{{ s.title }}</a></h1>
+        <p>{{s.description}}</p>
+    </div>
+    {% endfor %}
 </div>

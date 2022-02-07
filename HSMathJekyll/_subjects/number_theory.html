@@ -1,0 +1,23 @@
+---
+title: Number Theory
+folder: ./number_theory/
+layout: default
+description: The main purpose of <i>number theory</i> is to develop...
+---
+
+<div style="text-align: center;">
+    <h1>{{ page.title }}</h1>
+</div>
+
+Mathematics is the queen of the sciences. And number theory is the queen of mathematics. Gauss.
+
+</br>
+</br>
+
+<h2>
+    Concepts
+</h2>
+
+{% for a1 in site.number_theory %}
+<a href="{{ a1.url }}">{{ a1.title }}</a></br>
+{% endfor %}
