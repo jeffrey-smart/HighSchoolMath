@@ -23,7 +23,7 @@ email: jsmart@lvusd.org
 description: >- # this means to ignore newlines until "baseurl:"
   A comprehensiove coverage of all topics covered in the 9th through 12th grade levels of mathematics outlined in the Califormia Department of Education's curriculum.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://highschoolmath.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://highschoolmath.net" # the base hostname & protocol for your site, e.g. http://example.com
 
 github_username:  jeffrey-smart
 
