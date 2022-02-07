@@ -1,0 +1,24 @@
+---
+title: Algebra II
+folder: ./algebra2/
+layout: default
+description: The Algebra II course extends students’ understanding of functions and real numbers and increases the tools students have for modeling the real world.
+---
+
+<div style="text-align: center;">
+    <h1>{{ page.title }}</h1>
+</div>
+
+The Algebra II course extends students’ understanding of functions and real numbers and increases the tools students have for modeling the real world. Students in Algebra II extend their notion of number to include complex numbers and see how the introduction of this set of numbers yields the solutions of polynomial equations and the Funda- mental Theorem of Algebra. Students deepen their under- standing of the concept of function and apply equation-solving and function concepts to many different types of functions. The system of polynomial functions, analogous to integers, is extended to the field of rational functions, which is analogous to rational numbers. Students explore the relationship between exponential functions and their inverses, the logarithmic functions. Trigonometric functions are extended to all real numbers, and their graphs and properties are studied. Finally, students’ knowledge of statistics is extended to include under- standing the normal distribution, and students are challenged to make inferences based on sampling, experiments, and observational studies. As per the <a href="https://www.cde.ca.gov/ci/ma/cf/documents/mathfwalgebra2lmgjl.pdf">California Department of Education</a>.
+
+
+</br>
+</br>
+
+<h2>
+    Concepts
+</h2>
+
+{% for a2 in site.algebra2 %}
+    <a href="{{ a2.url }}">{{ a2.title }}</a></br>
+{% endfor %}
