@@ -74,3 +74,5 @@ collections:
     output: true
   number_theory:
     output: true
+  posts:
+    output: true
