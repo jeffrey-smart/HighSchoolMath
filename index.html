@@ -1,28 +1,5 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: default
-
+layout: main
 ---
 
 SITE UNDER CONSTRUCTION: High school mathematics topics based on the California Department of Education curriculum.
-
-</br>
-</br>
-
-<hr
-    style="height: 4px; border-width: 0; color: black; background-color: black; padding: 0.5px; width: 60%; margin: auto;">
-
-</br>
-
-{% assign sorted_subjects = site.subjects | sort: "order" %}
-
-<div style="margin: auto;">
-    {% for s in sorted_subjects %}
-    <div style="text-align: center;">
-        <h1 style="text-align: center;"><a href="{{ s.url }}">{{ s.title }}</a></h1>
-        <p>{{s.description}}</p>
-    </div>
-    {% endfor %}
-</div>

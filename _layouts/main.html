@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- seo -%}
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    {%- feed_meta -%}
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+  </head>  
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      
+        </br>
+        </br>
+
+        <hr
+            style="height: 4px; border-width: 0; color: black; background-color: black; padding: 0.5px; width: 60%; margin: auto;">
+
+        </br>
+
+        {% assign sorted_subjects = site.subjects | sort: "order" %}
+
+        <div style="display: grid; grid-template-columns: auto auto auto; padding: 5px;">
+            {% for s in sorted_subjects %}
+            <div style="text-align: center;">
+                <h2 style="text-align: center;"><a href="{{ s.url }}">{{ s.title }}</a></h2>
+                <p>{{s.description}}</p>
+            </div>
+            {% endfor %}
+        </div>
+        </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
