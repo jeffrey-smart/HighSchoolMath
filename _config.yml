@@ -54,18 +54,18 @@ exclude:
 
 collections:
   subjects:
-    output: true
     order:
       - number_theory.html
       - algebra1.html
       - geometry.html
       - algebra2.html
       - calculus.html
+    output: true      
   algebra1:
-    output: true
     order:
       - long_division.html
       - even_longer_division.html
+    output: true  
   algebra2:
     output: true
   geometry:
