@@ -16,6 +16,8 @@ SITE UNDER CONSTRUCTION: High school mathematics topics based on the California 
 
 </br>
 
+{% assign sorted_subjects = site.subjects | sort: "order" %}
+
 <div style="margin: auto;">
     {% for s in site.subjects %}
     <div style="text-align: center;">

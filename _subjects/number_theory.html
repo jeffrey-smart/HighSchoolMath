@@ -1,12 +1,10 @@
 ---
 title: Number Theory
-layout: default
+folder: number_theory
+order: 0
+layout: subject_toc
 description: <i>Number theory</i> is about...
 ---
-
-<div style="text-align: center;">
-    <h1>{{ page.title }}</h1>
-</div>
 
 <p>
     First introductory paragraph ...
@@ -16,13 +14,3 @@ description: <i>Number theory</i> is about...
     Second introductory paragraph ...
 </p>
 
-</br>
-</br>
-
-<h2>
-    Concepts
-</h2>
-
-{% for a1 in site.number_theory %}
-<a href="{{ a1.url }}">{{ a1.title }}</a></br>
-{% endfor %}

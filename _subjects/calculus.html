@@ -1,12 +1,10 @@
 ---
 title: Calculus
-layout: default
+folder: calculus
+order: 4
+layout: subject_toc
 description: Calculus description
 ---
-
-<div style="text-align: center;">
-    <h1>{{ page.title }}</h1>
-</div>
 
 *FIX ME* The Algebra II course extends students’ understanding of functions and real numbers and increases the tools
 students have for modeling the real world. Students in Algebra II extend their notion of number to include complex
@@ -21,14 +19,3 @@ include under- standing the normal distribution, and students are challenged to 
 experiments, and observational studies. As per the <a
     href="https://www.cde.ca.gov/ci/ma/cf/documents/mathfwalgebra2lmgjl.pdf">California Department of Education</a>.
 
-
-</br>
-</br>
-
-<h2>
-    Concepts
-</h2>
-
-{% for c in site.calculus %}
-<a href="{{ c.url }}">{{ c.title }}</a></br>
-{% endfor %}
