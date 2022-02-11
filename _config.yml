@@ -59,7 +59,7 @@ collections:
       - algebra1.html
       - geometry.html
       - algebra2.html
-      - calculus.html
+      - calculus_ab.html
     output: true      
   algebra1:
     order:
@@ -70,7 +70,7 @@ collections:
     output: true
   geometry:
     output: true
-  calculus:
+  calculus_ab:
     output: true
   number_theory:
     output: true

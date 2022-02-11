@@ -31,9 +31,9 @@
 
         {% assign sorted_subjects = site.subjects | sort: "order" %}
 
-        <div style="display: grid; grid-template-columns: auto auto auto; padding: 5px;">
+        <div style="display: grid; grid-template-columns: auto auto auto;">
             {% for s in sorted_subjects %}
-            <div style="text-align: center;">
+            <div style="text-align: center; padding: 5px;">
                 <h2 style="text-align: center;"><a href="{{ s.url }}">{{ s.title }}</a></h2>
                 <p>{{s.description}}</p>
             </div>
